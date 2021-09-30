@@ -1,0 +1,10 @@
+digraph G {
+  margin=0;
+  rankdir=LR;
+  "" [shape = none, width=0, height=0, margin=0]
+  "" -> "INAKTIV"
+  "INAKTIV" -> "BAD" [label="Luftfugtighed > 80%"]
+  "BAD" -> "INAKTIV" [label="Luftfugtighed < 80%"]
+  "BAD" -> "ALARM" [label="Nedtælling færdig"]
+#  "ALARM" -> "INAKTIV" [label="Slå alarm fra"]
+}
